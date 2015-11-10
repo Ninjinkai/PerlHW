@@ -1,3 +1,6 @@
+# Nick Petty
+# COT5930 Programming Languages
+# Perl Homework Assignment
 
 use strict;
 
