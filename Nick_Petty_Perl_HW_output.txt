@@ -1,0 +1,164 @@
+Console output for command:
+perl Nick_Petty_Perl_HW.pl expr1.in 
+input line:	0
+
+tokens:
+0	0
+
+Postfix: 0
+
+input line:	1 + 2
+
+tokens:
+0	1
+1	+
+2	2
+
+Postfix: 1 2 +
+
+input line:	( 1 + 2 ) * 3
+
+tokens:
+0	(
+1	1
+2	+
+3	2
+4	)
+5	*
+6	3
+
+Postfix: 1 2 + 3 *
+
+input line:	( 4 ) / ( 6 - 5 )
+
+tokens:
+0	(
+1	4
+2	)
+3	/
+4	(
+5	6
+6	-
+7	5
+8	)
+
+Postfix: 4 6 5 - /
+
+input line:	( ( 4 ) / ( 6 - 5 ) ) * 7
+
+tokens:
+0	(
+1	(
+2	4
+3	)
+4	/
+5	(
+6	6
+7	-
+8	5
+9	)
+10	)
+11	*
+12	7
+
+Postfix: 4 6 5 - / 7 *
+
+input line:	( ( ( ( 4 ) / ( 6 - 5 ) ) * 7 ) )
+
+tokens:
+0	(
+1	(
+2	(
+3	(
+4	4
+5	)
+6	/
+7	(
+8	6
+9	-
+10	5
+11	)
+12	)
+13	*
+14	7
+15	)
+16	)
+
+Postfix: 4 6 5 - / 7 *
+
+input line:	123 - 45 * 678 / 9
+
+tokens:
+0	123
+1	-
+2	45
+3	*
+4	678
+5	/
+6	9
+
+Postfix: 123 45 678 * 9 / -
+
+input line:	a + bc * def
+
+tokens:
+0	a
+1	+
+2	bc
+3	*
+4	def
+
+Postfix: a bc def * +
+
+input line:	( a + bc ) * def
+
+tokens:
+0	(
+1	a
+2	+
+3	bc
+4	)
+5	*
+6	def
+
+Postfix: a bc + def *
+
+input line:	4 / ( 6 / 5 + 4 * 3 ) * 2
+
+tokens:
+0	4
+1	/
+2	(
+3	6
+4	/
+5	5
+6	+
+7	4
+8	*
+9	3
+10	)
+11	*
+12	2
+
+Postfix: 4 6 5 / 4 3 * + / 2 *
+
+input line:	4 * ( 6 * 5 + 4 / 3 ) / 2 - 1
+
+tokens:
+0	4
+1	*
+2	(
+3	6
+4	*
+5	5
+6	+
+7	4
+8	/
+9	3
+10	)
+11	/
+12	2
+13	-
+14	1
+
+Postfix: 4 6 5 * 4 3 / + * 2 / 1 -
